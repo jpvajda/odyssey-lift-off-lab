@@ -9,6 +9,11 @@ const resolvers = {
     track: (_, { id }, { dataSources }) => {
       return dataSources.trackAPI.getTrack(id);
     },
+
+    // gets a single module for the module details page
+    module: (_, { id }, { dataSources }) => {
+      return dataSources.trackAPI.getModule(id);
+    },
   },
   Track: {
     author: ({ authorId }, _, { dataSources }) => {
