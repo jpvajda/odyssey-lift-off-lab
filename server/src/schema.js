@@ -29,6 +29,8 @@ const typeDefs = gql`
     numberOfViews: Int
     "The track's complete array of Modules"
     modules: [Module!]!
+    "test schema field for GH action"
+    test: blah blah blah
   }
 
   "Author of a complete Track or a Module"
